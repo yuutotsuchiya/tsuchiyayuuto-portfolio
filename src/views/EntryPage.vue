@@ -84,7 +84,7 @@ export default {
 .body {
  ::v-deep  img {
     width: 100%;
-    max-width: 100px;
+    max-width: 1000px;
     height: auto;
     margin: 0 auto;
   }

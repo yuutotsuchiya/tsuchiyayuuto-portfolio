@@ -40,7 +40,7 @@ export default {
     font-size: 18px;
     & svg{
         vertical-align: middle;
-        margin-left: 8px;
+        margin-right: 8px;
     }
     & a{
         color:#fff;
