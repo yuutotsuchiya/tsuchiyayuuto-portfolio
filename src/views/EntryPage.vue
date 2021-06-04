@@ -73,6 +73,7 @@ export default {
   font-size: 24px;
   position: relative;
   color: #333;
+  text-align: left;
   &:after {
     content: '';
     display: block;
@@ -82,8 +83,10 @@ export default {
 }
 .body {
  ::v-deep  img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 100px;
     height: auto;
+    margin: 0 auto;
   }
   ::v-deep h2 {
     padding: 4px 8px;

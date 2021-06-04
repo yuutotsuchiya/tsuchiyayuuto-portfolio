@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .contents-item {
-  padding: 60px 12px 120px;
+  padding: 60px 10px 120px;
   margin: 0 auto;
   max-width: 896px;
   text-align: left;

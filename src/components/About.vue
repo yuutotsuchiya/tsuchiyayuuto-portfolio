@@ -1,7 +1,7 @@
 <template>
     <section class="about">
         <h2 class="about-title">About</h2>
-        <figure class="about-img"><img src="" alt=""></figure>
+        <p class="about-img"></p>
         <p class="about-name">yuto tsuchiya</p>
         <p class="about-birthday">2001 / 11 / 21</p>
         <p class="about-skill">HTML / CSS / Javascript / Vue / photoshop / illistrator</p>
@@ -48,6 +48,8 @@
     }
 }
 .about-img{
+    background-image: url('../assets/aboutme.jpg');
+    background-size:100% auto;
     margin: auto;
     width: 130px;
     height: 130px;
