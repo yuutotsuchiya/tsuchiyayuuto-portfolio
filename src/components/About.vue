@@ -22,7 +22,7 @@
     & > * {
         margin: 0 auto;
         width: 100%;
-        max-width: 980px;
+        max-width: 896px;
     }
     &:after {
         margin: 0 auto;

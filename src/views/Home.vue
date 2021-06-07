@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Loading v-if="entries.length === 0" />
     <About />
     <ContentsItem title="Web Works" />
     <EntryThumbnail
@@ -14,12 +15,14 @@ import { useStore } from 'vuex'
 import About from '@/components/About.vue'
 import ContentsItem from '@/components/ContentsItem.vue'
 import EntryThumbnail from '@/components/EntryThumbnail.vue'
+import Loading from '@/icons/Loading.vue'
 export default {
   name: 'Home',
   components: {
     About,
     EntryThumbnail,
     ContentsItem,
+    Loading
   },
   setup() {
     const store = useStore();

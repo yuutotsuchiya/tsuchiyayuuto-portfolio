@@ -70,32 +70,35 @@ export default {
 }
 .entry-title {
   margin: 0 auto 40px;
+  padding: 4px 8px;
   font-size: 24px;
   position: relative;
   color: #333;
   text-align: left;
+  border-left: 8px solid #ff6701;
   &:after {
     content: '';
     display: block;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ff6701;
     width: 200px;
   }
 }
 .body {
  ::v-deep  img {
     width: 100%;
-    max-width: 1000px;
+    max-width: 896px;
     height: auto;
     margin: 0 auto;
   }
   ::v-deep h2 {
     padding: 4px 8px;
     font-size: 20px;
-    border-left: 8px solid #39c;
+    border-left: 8px solid #fea82f;
+    text-align: left;
     &:after {
       content: '';
       display: block;
-      border-bottom: 1px solid #39c;
+      border-bottom: 1px solid #fea82f;
       width: 300px;
     }
   }
@@ -110,11 +113,36 @@ export default {
   ::v-deep p {
     font-size: 16px;
     margin: 16px 0;
+    line-height: 170%;
   }
   ::v-deep ul,
   ::v-deep ol {
     font-size: 16px;
     margin: 16px;
+  }
+  ::v-deep a{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #ff6701;
+    text-decoration: none;
+    line-height: 110%;
+      &:after {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #ff6701;
+      transform: translate(-100%, 0);
+      transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+      content: "";
+      }
+      &:hover{
+        &:after {
+        transform: translate(0, 0);
+      }
+    }
   }
 }
 </style>

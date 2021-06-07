@@ -36,7 +36,8 @@ export default {
   margin: 0 12px 64px;
   width: calc(25% - 24px);
   &:hover a {
-    opacity: 0.8;
+  opacity: 0.8;
+  transition : all 0.3s ease 0s;
   }
   & a {
     display: block;
@@ -54,9 +55,11 @@ export default {
   font-size: 16px;
   line-height: 1.6;
   font-weight: normal;
+  height: 50px;
   & a {
     color: #333;
     text-decoration: none;
+    font-size: 14px;
   }
 }
 .entry-image {

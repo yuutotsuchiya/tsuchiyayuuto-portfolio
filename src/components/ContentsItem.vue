@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .contents-item {
-  padding: 60px 10px 120px;
+  padding: 60px 16px 120px;
   margin: 0 auto;
   max-width: 896px;
   text-align: left;
@@ -30,7 +30,7 @@ export default {
   &:after {
     content: '';
     display: block;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ff6701;
     width: 200px;
   }
 }

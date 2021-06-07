@@ -18,11 +18,12 @@
     font-size:18px;
     color:#fff;
     & a {
-     color: #fff; 
-     text-decoration: none;
+        color: #fff; 
+        text-decoration: none; 
     }
     & :hover {
          opacity: 0.8;
+         transition : all 0.3s ease 0s;
      }
 }
 .main-title-img img{
