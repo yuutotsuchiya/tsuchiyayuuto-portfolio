@@ -89,6 +89,7 @@ export default {
     max-width: 896px;
     height: auto;
     margin: 0 auto;
+    margin: 16px 0;
   }
   ::v-deep h2 {
     padding: 4px 8px;

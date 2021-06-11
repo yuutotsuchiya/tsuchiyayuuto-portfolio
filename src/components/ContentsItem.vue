@@ -17,13 +17,14 @@ export default {
 
 <style lang="scss" scoped>
 .contents-item {
-  padding: 60px 16px 120px;
+  padding: 60px 12px 0px;
   margin: 0 auto;
   max-width: 896px;
   text-align: left;
 }
 .contents-item-title {
   margin: 0 auto 40px;
+  padding:0 12px;
   font-size: 24px;
   position: relative;
   color: #333;
@@ -32,6 +33,9 @@ export default {
     display: block;
     border-bottom: 1px solid #ff6701;
     width: 200px;
+  }
+  @media screen and (max-width:896px) {
+    padding:0px;
   }
 }
 </style>

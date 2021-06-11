@@ -1,10 +1,12 @@
 <template>
     <section class="about">
-        <h2 class="about-title">About</h2>
+        <section class="about-section">
+            <h2 class="about-title">About</h2>
+            <p class="about-name">yuto tsuchiya</p>
+            <p class="about-birthday">2001 / 11 / 21</p>
+            <p class="about-skill">HTML / CSS / Javascript / Vue / photoshop / illistrator</p>
+        </section>
         <p class="about-img"></p>
-        <p class="about-name">yuto tsuchiya</p>
-        <p class="about-birthday">2001 / 11 / 21</p>
-        <p class="about-skill">HTML / CSS / Javascript / Vue / photoshop / illistrator</p>
     </section>
 </template>
 <style lang="scss" scoped>
@@ -46,6 +48,9 @@
         display: block;
         width: 200px;
     }
+    @media screen and (max-width:896px){
+        padding: 0 12px;
+    }
 }
 .about-img{
     background-image: url('../assets/aboutme.jpg');
@@ -57,29 +62,40 @@
     border-radius: 6px;
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 30px;
     left: 860px;
     bottom: 0;
     @media screen and (max-width:600px){
         margin:10px auto;
         position: static;
     }
+    @media screen and (max-width:896px){
+        right: 16px;
+    }
     @media screen and (max-width:1024px){
         left: auto;
     }
-
 }
 .about-name{
     padding: 0 16px;
     font-size:28px;
+    @media screen and (max-width:896px){
+        padding: 0 12px;
+    }
 }
 .about-birthday{
     padding: 0 16px;
     font-size:14px;
     margin-bottom: 16px;
+    @media screen and (max-width:896px){
+        padding: 0 12px;
+    }
 }
 .about-skill{
     padding: 0 16px;
     font-size:16px;
+    @media screen and (max-width:896px){
+        padding: 0 12px;
+    }
 }
 </style>

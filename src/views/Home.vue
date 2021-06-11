@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <Loading v-if="entries.length === 0" />
     <About />
     <ContentsItem title="Web Works" />
+    <Loading v-if="entries.length === 0" />
     <EntryThumbnail
       :entries="entries"
     />
